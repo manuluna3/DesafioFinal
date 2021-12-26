@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.row{
+    margin-right: 0px;
+    margin-left: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+p::selection{
+    color: black;
+    background: rgb(248, 190, 82);
+}
+a::selection{
+    color: black;
+    background: rgb(248, 190, 82);
+}
+ 
+/* Paleta de colores */
+.color1{
+   color: rgb(248, 190, 82); 
+}
+.color2{
+    color: white;
+}
+.color3{
+    color: black;
+}
+.color4{
+    color: wheat;
+}
+.color5{
+    color: red;
+}
+
+/* Tamaños */
+
+.size1{
+    font-size: 1vw;
+}
+.size2{
+    font-size: 1.5vw;
+}
+.size3{
+    font-size: 2vw;
+}
+.size4{
+    font-size: 2.5vw;
+}
+.size5{
+    font-size: 3vw;
+}
+/* ----------------- */
+
+body{
+    min-height: 100vh;
+    background-color: #1b1e20;
+}
+.body2{
+    min-height: 100vh;
+    background-color: brown;
+}
+#logo{
+    color: rgb(248, 190, 82);
+    padding-left: 10px;
+    font-size: 25px;
+    font-family: 'Pushster', cursive;
+}
+.logoimg{
+    padding-bottom: 30px;
+}
+#navb a{
+    color: rgb(248, 190, 82);
+    font-family: 'Nunito', sans-serif;
+}
+.navbar a:hover{
+    background-color: rgb(81, 87, 94);
+    border-radius: 10px;
+}
+#title{
+    background-color: rgb(248, 190, 82);
+}
+#title p{
+    color:rgb(218, 56, 56);
+    text-shadow: 1px 1px 1px black;
+    padding: 1rem;
+    font-size: 2.5vw;
+    font-family: 'Pushster', cursive;
+}
+#title2{
+    background-color: rgb(248, 190, 82);
+}
+#title2 p{
+    color:rgb(218, 56, 56);
+    text-shadow: 1px 1px 1px black;
+    padding: 1rem;
+    font-size: 2.5vw;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Inicio del carousel */
+.car{
+    padding-bottom: 20px;
+}
+.carousel-item .img-fluid {
+    width:90%;
+    height:100%;
+}
+.carousel-item h3{
+    color: red;
+    text-shadow: 1.5px 1.5px 1.5px black;
+    font-family: 'Nunito', sans-serif;
+}
+.carousel-item p{
+    color: rgb(248, 190, 82);
+    text-shadow: 1.5px 1.5px 1.5px black;
+    font-family: 'Nunito', sans-serif;
+}
+.carousel-inner img{
+    border-radius: 20px;
+}
+/* Esto es para cambiar el color de los controles del carousel */
+.carousel-indicators li{
+    background-color: rgb(248, 190, 82);
+}
+.carousel-control-prev-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(248, 190, 82)' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E")
+}
+.carousel-control-next-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(248, 190, 82)' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E")
+}
+/* ---------------------- Fin del carousel ------------------- */
+
+
+.image{
+    width: 80%;
+    padding-bottom: 3vh;
+}
+.sectitle{
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Oswald', sans-serif;
+}
+form{    
+    padding-left: 10px;
+    padding-bottom: 30px;
+}
+label{
+    color: rgb(248, 190, 82);
+    font-family: 'Nunito', sans-serif;
+}
+iframe{
+    padding-top: 5vh;
+    max-width: 100%;
+}
+
+
+
+
+/* Inicio del footer */
+.footerdiv{
+    height:5px;
+    background-color: rgb(248, 190, 82);
+}
+footer ul{
+    list-style: none;
+}
+#copyright{
+    background-color: rgba(0, 0, 0, 0.486);
+}
+.fab{
+    color: rgb(248, 190, 82);
+}
+.social{
+    letter-spacing: 5px;
+}
+.social i:hover{
+    color: red;
+}
+/* Fin del footer */
+
+@media (max-width: 991px){
+    .contact{
+    text-align: center !important;
+    }
+}

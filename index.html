@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pushster&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Oswald&display=swap" rel="stylesheet">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- Mi CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>Home</title>
+</head>
+
+<!-- Inicio Barra de navegación -->
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <img src="assets/icons/popcorn.png" class="logoimg"  alt="Logo">
+        <p class="navbar-brand" id="logo" href="#">Popcorn Time</p>
+        <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
+            data-target="#navb" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navb">
+            <ul class="menu navbar-nav ml-auto" id="nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item active dropdown">
+                    <a class="menu nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                      Categorias
+                    </a>
+                    <div class="dropdown-menu bg-dark">
+                      <a class="dropdown-item dropitem" href="#">Acción</a>
+                      <a class="dropdown-item dropitem" href="#">Aventuras</a>
+                      <a class="dropdown-item dropitem" href="#">Ciencia Ficción</a>
+                      <a class="dropdown-item dropitem" href="#">Comedia</a>
+                      <a class="dropdown-item dropitem" href="#">Drama</a>
+                      <a class="dropdown-item dropitem" href="#">Romance</a>
+                      <a class="dropdown-item dropitem" href="#">Terror</a>
+                    </div>
+                  </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Noticias</a>
+                </li>
+                <li class="nav-item active top10">
+                    <a class="nav-link" href="#">TOP 10!</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="pag/contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Fin de barra de navegación -->
+
+<div class="container-fluid" id="title">
+    <p class="text-center animate__animated animate__zoomIn">Aquí Encontrarás las Últimas Noticias Sobre el Mundo del Cine </p>
+</div>  
+
+    <!-- Inicio Carousel -->
+    <div class="car">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+    
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+              <li data-target="#demo" data-slide-to="3"></li>
+            </ul>
+          
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="img-fluid mx-auto d-block" src="assets/img/car1.png" alt="Img1">
+                    <div class="carousel-caption">
+                        <h3 class="size3">Los últimos estrenos</h3>
+                        <p class="size2">de las películas más esperadas</p>
+                    </div>
+              </div>
+              <div class="carousel-item">
+                <a href="#"><img class="img-fluid mx-auto d-block" src="assets/img/car2.png" alt="Img2"></a>
+                    <div class="carousel-caption">
+                        <h3 class="size3">Las últimas noticias</h3>
+                        <p class="size2">del gran mundo del cine</p>
+                    </div>
+              </div>
+              <div class="carousel-item">
+                <img class="img-fluid mx-auto d-block" src="assets/img/car3.png" alt="Img3">
+                    <div class="carousel-caption">
+                        <h3 class="size3">Reseñas</h3>
+                        <p class="size2">comparte tu opinion con otros usuarios</p>
+                    </div>
+              </div>
+              <div class="carousel-item">
+                <img class="img-fluid mx-auto d-block" src="assets/img/car4.png" alt="Img4">
+                    <div class="carousel-caption">
+                        <h3 class="size3">Relajate</h3>
+                        <p class="size2">Prepara un snack, ponte cómodo y a disfrutar</p>
+                    </div>
+              </div>
+            </div>
+          
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          
+        </div>
+    </div>
+<!-- Fin del carousel -->
+
+<p class="sectitle text-center color5 size4">¿Quienes somos nosotros?</p>
+<img class="img-fluid rounded mx-auto d-block image"  src="assets/img/index1.png" alt="img3"> 
+
+<div class="container">
+        <p class="text-center color1 size2">
+        <mark>Somos gente que ama el mundo del cine y adoran compartir sus opiniones con otros usuarios, bla bla bla. Aquí iría un texto extenso sobre el origen de la pagina/idea pero como no se me ocurre nada, a partir de este punto son solo lorems para rellenar.</mark> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis dolorum autem quibusdam fugit tempora laborum numquam quia provident, accusantium distinctio, illo fuga atque molestiae veritatis nesciunt vel? Commodi, maxime error. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi eum rem reprehenderit quam quibusdam ab doloremque magni aut laboriosam amet explicabo, vitae laborum sint deserunt ex aperiam fugit culpa neque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sed exercitationem, fuga doloremque itaque, corrupti commodi nam iste ducimus accusantium pariatur in eveniet nostrum delectus aspernatur minus architecto asperiores? Architecto Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, cum dicta fuga eveniet quibusdam itaque odio non aliquam illum libero cupiditate repudiandae obcaecati, vero incidunt perferendis sit dolores suscipit nesciunt?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aperiam iste ipsum? Aliquid, facilis repellendus. Iste voluptatum quo dolores sapiente sunt animi ab impedit saepe ducimus. Quidem laborum autem porro.
+        Accusamus, hic iusto. Esse quis obcaecati fuga nisi inventore hic dolore distinctio quibusdam, omnis deleniti sit aperiam ad illum labore nostrum aliquam fugit magnam corporis molestias amet porro! Earum, inventore.
+        Veritatis itaque placeat cupiditate quam. Sint officiis eligendi et ducimus perferendis harum beatae impedit unde error dolorem architecto voluptatibus dolor quis saepe eius praesentium, placeat, repellendus maxime blanditiis ab porro.
+        Corrupti eius, quia veniam provident, praesentium vel at temporibus dolores ab culpa enim alias sapiente nostrum ducimus? Inventore, beatae vero ipsa dolore quaerat odio ratione sequi praesentium ullam optio corporis.
+        Iure cum animi, vitae neque provident laborum deserunt facilis voluptatem dicta aspernatur incidunt architecto laboriosam! Vero nobis placeat expedita veritatis similique, laudantium voluptatibus officiis quam sunt ipsa soluta ab suscipit?
+        Voluptatum, accusamus quam labore magni fuga praesentium dolores ratione distinctio animi sed perferendis velit quas facere aut dolorem enim assumenda ea cupiditate, esse repellendus sunt delectus eveniet. Autem, quos quibusdam?
+        Nisi expedita odit sit? Aperiam, quos reiciendis. Aperiam velit itaque omnis commodi eos explicabo mollitia distinctio delectus autem accusantium ducimus numquam impedit neque placeat voluptatibus ad ut, exercitationem non tenetur.
+        Ipsam atque enim inventore suscipit, earum et nostrum ab dignissimos assumenda totam accusantium ea impedit consectetur reiciendis aspernatur, maiores doloremque repudiandae, facilis a. Reprehenderit perspiciatis possimus atque consequatur quisquam enim?
+        Veniam quasi vel, nisi nulla veritatis excepturi inventore, eos mollitia cum ducimus, fugiat dolorem error nostrum? Quae nemo modi, at corporis illum ad a consectetur eius nam beatae dolorem veritatis!
+        Dolor laudantium debitis cumque atque ab cum, adipisci quidem expedita accusamus sint voluptatum id nobis optio officia earum libero minima? Incidunt provident repudiandae tempora nobis animi? Voluptatibus, ad! Vitae, unde.
+        </p> 
+
+</div>
+
+<p class="sectitle text-center color5 size4">¿Que queremos lograr?</p>
+<img class="img-fluid rounded mx-auto d-block image"  src="assets/img/index2.png" alt="img2">
+
+<div class="container">
+        <p class="text-center color1 size2">
+        <mark>Aquí lo mismo que antes, iría un texto extenso sobre el objetivo de la página, sus diferentes funciones, objetivos a corto y largo plazo como convertirse en la mejor página de reviews y noticias sobre mundo del cine, etc. etc.</mark>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, eum. Deleniti minus quia recusandae eum aut, nemo ad eos fugit! Sequi modi, quo alias odio maxime incidunt non facere sit.
+        Excepturi asperiores quia doloribus magni aut modi consequuntur dolore vero, atque voluptate, deserunt officiis dolorem accusantium, labore nobis impedit corporis architecto minus tempora rem suscipit. Officiis aspernatur adipisci ratione dignissimos?
+        Quae accusantium, doloremque molestiae unde rerum tempora modi eum fugit ipsum dolorum delectus quod cupiditate tenetur veniam nesciunt at recusandae natus voluptate veritatis praesentium! Placeat quo quis explicabo ipsa maiores.
+        Eum, repellat commodi facere nostrum consequuntur optio soluta deserunt, porro nesciunt qui minus nulla distinctio. Harum doloremque quod temporibus? Quisquam expedita eveniet nulla voluptatem fugiat, hic molestiae vero! Placeat, minima.
+        Adipisci repellendus, error neque sint, iure at dolor ratione perspiciatis dicta non amet tenetur praesentium, ipsam sunt. Minima adipisci laborum cum officiis odio assumenda illo placeat id quis reprehenderit? Exercitationem?
+        Quis eveniet nisi, voluptatum cupiditate perspiciatis, nihil quisquam ut officiis, ipsa fuga esse. Dicta ut officiis veritatis aspernatur exercitationem, in explicabo. Est molestias laborum sit nesciunt non eveniet optio cupiditate?Lorem ipsum, dolor sit amet consectetur adipisicing elit. In adipisci doloremque aperiam distinctio aliquam omnis eos commodi sint quam accusamus. Laudantium commodi necessitatibus perspiciatis. Eligendi minus ex perspiciatis sit libero.
+        Aut hic, quo dolor expedita facilis illum aperiam neque placeat! Expedita aspernatur dolorem doloremque consequuntur voluptas dignissimos atque qui sequi repellendus maiores, debitis architecto vero iusto. Itaque adipisci ipsum sit!
+        Veniam odio ullam temporibus libero maxime beatae amet iusto delectus quia a animi, fugit ducimus corporis aliquam laborum nostrum, aspernatur perspiciatis quisquam sit deleniti quae tempora ut. Culpa, ea quod.
+        Maxime explicabo, omnis consectetur facilis repellat iusto officiis pariatur dicta odit, totam a! Impedit rem quod laboriosam hic ex maxime minus officiis inventore, iste architecto accusamus nobis fugit deserunt eius.
+        Exercitationem sapiente dolor nesciunt odio consectetur! Suscipit adipisci dolore esse sint? Porro saepe aspernatur consequuntur mollitia similique ab tenetur eos rerum voluptas ad veritatis alias optio, necessitatibus incidunt omnis ipsum.
+        Alias omnis exercitationem placeat reprehenderit veniam totam, tenetur aliquam temporibus officiis voluptatum laboriosam iure amet sequi repudiandae pariatur libero in cum nobis quibusdam! Beatae deserunt velit iusto eaque unde ipsam.
+        Voluptatem officia facere, odio accusantium quis consequatur expedita dolorum aperiam vitae incidunt perferendis deserunt quisquam nisi aspernatur ipsum molestiae tenetur omnis ratione voluptas aut, recusandae eaque dolores dolor. Tempore, officiis.
+        Odio veniam accusantium voluptates magnam aut officiis voluptatem doloribus facere eaque recusandae dolore vel, nesciunt porro provident eius animi perspiciatis nulla in quo distinctio est quod quam perferendis. Doloribus, asperiores?
+        Modi nisi molestiae harum vitae beatae voluptatum libero. Saepe magnam aperiam nemo tempore ut quod numquam, corporis facere quos dolorem commodi, fugiat voluptatum id magni, tenetur dolor quaerat nostrum alias!
+        Explicabo rerum recusandae nobis minus consequatur quia possimus tenetur similique tempora rem cumque dolorum, quidem quos dignissimos provident. Nostrum omnis laudantium in esse voluptates dignissimos excepturi numquam explicabo enim minima.
+        </p>
+</div>
+
+<p class="sectitle text-center color5 size4">Finalmente...</p>
+<img class="img-fluid rounded mx-auto d-block image"  src="assets/img/index3.png" alt="img2">
+
+<div class="container">
+    <p class="text-center color1 size2">
+        <mark>Finalmente, aquí iría un texto dirigido especificamente al usuario en el que le deseo que se diverta y que pase un buen rato en la página, prepare un snack se pongagi cómodo y disfrute con las recomendaciones de películas que aquí encontrará</mark>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore odio, quo possimus saepe quidem laudantium quasi nemo? Perspiciatis eius in nobis porro quae. Laboriosam nemo debitis molestias laborum tenetur iusto?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nemo nobis praesentium ut a, vero culpa unde iure architecto perspiciatis iusto cumque est eum asperiores veniam vitae ab! Commodi, tempore!
+    </p>
+</div>
+<div>
+
+</div>
+
+<!-- Inicio del footer -->
+
+<div class="footerdiv container-fluid"></div>
+<!-- Esto es para hacer la linea coloreada para dividir el footer del resto de la página -->
+
+<footer class="text-center color1 bg-dark">
+
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <h5 class="contact text-uppercase text-left">Datos de contacto</h5>
+                <ul class="contact text-left">
+                    <li>Telefono: 1234-5678</li>
+                    <li>E-mail: FoodWorld@hotmail.com</li>
+                    <li>Dirección: CalleFalsa 123</li>
+                </ul>
+            </div>
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Nuestras redes sociales</h5>
+                <div class="social size4 col">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="text-center p-1" id="copyright">
+     © 2021 PopCorn Time Todos los derechos reservados
+    </div>
+
+</footer>
+<!-- Fin del footer -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
