@@ -1,0 +1,288 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p::-moz-selection {
+  color: black;
+  background: #f8be52;
+}
+
+p::selection {
+  color: black;
+  background: #f8be52;
+}
+
+a::-moz-selection {
+  color: black;
+  background: #f8be52;
+}
+
+a::selection {
+  color: black;
+  background: #f8be52;
+}
+
+footer::-moz-selection {
+  color: black;
+  background: #f8be52;
+}
+
+footer::selection {
+  color: black;
+  background: #f8be52;
+}
+
+h1::-moz-selection {
+  color: black;
+  background: #f8be52;
+}
+
+h1::selection {
+  color: black;
+  background: #f8be52;
+}
+
+h5::-moz-selection {
+  color: black;
+  background: #f8be52;
+}
+
+h5::selection {
+  color: black;
+  background: #f8be52;
+}
+
+li::-moz-selection {
+  color: black;
+  background: #f8be52;
+}
+
+li::selection {
+  color: black;
+  background: #f8be52;
+}
+
+/* -Variables- */
+/* Paleta de colores */
+/* Tamaños */
+/* Tamaño de fuentes*/
+/* Fuentes */
+/* ----------------- */
+body {
+  min-height: 100vh;
+  background-color: #1b1e20;
+}
+
+.body2 {
+  min-height: 100vh;
+  background-color: brown;
+}
+
+#logo {
+  color: #f8be52;
+  padding-left: 10px;
+  font-size: 25px;
+  font-family: 'Pushster', cursive;
+  text-shadow: 1.5px 1.5px 1px #da0101;
+}
+
+.logoimg {
+  padding-bottom: 20px;
+}
+
+#navb a {
+  color: #f8be52;
+  font-family: 'Nunito', sans-serif;
+}
+
+.navbar a:hover {
+  background-color: #51575e;
+  border-radius: 10px;
+}
+
+#banner {
+  background-image: url(../assets/img/banner.jpg);
+  background-size: contain;
+}
+
+#banner p {
+  color: red;
+  text-shadow: 1px 1px 1px black;
+  padding: 1rem;
+  font-size: 2.5vw;
+  font-family: "Nunito", sans-serif;
+}
+
+.image {
+  width: 80%;
+  padding-bottom: 3vh;
+}
+
+#newstext {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+section {
+  max-width: var(--sectionWidth);
+  color: black;
+}
+
+section section p {
+  font-family: "Nunito", sans-serif;
+}
+
+.title {
+  background-color: #f8be52;
+  border-radius: 10px;
+  border: solid red 5px;
+  width: 98%;
+}
+
+.title2 {
+  background-color: #f8be52;
+  border-radius: 10px;
+  border: solid red 5px;
+}
+
+summary {
+  display: block;
+  cursor: pointer;
+  padding: 10px;
+  font-family: "Nunito", sans-serif;
+  -webkit-transition: .2s;
+  transition: .2s;
+  border-bottom: 5px solid;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+summary summary p {
+  font-family: "Nunito", sans-serif;
+}
+
+summary:hover {
+  border-bottom: 5px solid #f8be52;
+}
+
+summary .readmore:hover {
+  color: #f8be52;
+  -webkit-transition: .1s;
+  transition: .1s;
+  text-shadow: 1px 1px 1px black;
+}
+
+details {
+  background-color: wheat;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 10px;
+}
+
+details details div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  line-height: 1.5;
+}
+
+.sideimg {
+  float: right;
+}
+
+.sidetext {
+  float: left;
+}
+
+.card-body {
+  padding: 0;
+}
+
+/* Inicio del footer */
+footer {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100%;
+}
+
+.footerdiv {
+  height: 5px;
+  background-color: #f8be52;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li {
+  color: #f8be52;
+  font-size: 1em;
+}
+
+footer h5 {
+  color: #f8be52;
+  font-size: 1.2em;
+  font-family: "Nunito", sans-serif;
+}
+
+footer i {
+  font-size: 1.5em;
+}
+
+.footer-logo {
+  color: #f8be52;
+  font-family: "Pushster", cursive;
+  text-shadow: 2px 2px 1px #da0101;
+}
+
+.fab {
+  color: #f8be52;
+}
+
+.social {
+  letter-spacing: 5px;
+}
+
+.social i:hover {
+  color: #ca1a1a;
+}
+
+#copyright {
+  background-color: rgba(0, 0, 0, 0.486);
+  color: #f8be52;
+  font-size: 1.5vw;
+}
+
+/* Fin del footer */
+@media (max-width: 991px) {
+  .contact, .footer-logo {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */
