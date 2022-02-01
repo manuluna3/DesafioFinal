@@ -106,6 +106,81 @@ body{
     font-size: 2.5vw;
     font-family: $font2;
 }
+
+/* El Menú de login (Cortesía de w3schools.com) */
+#login{
+    background-color: rgb(248, 190, 82);
+    color: #212529 !important;
+    border-radius: 100px;
+    width: 40px;
+}
+.close{
+    color: rgb(248, 190, 82);
+}
+.close:hover{
+    color: rgb(248, 190, 82);
+}
+.modal-body label{
+    font-family: 'Nunito', sans-serif;
+    color: $color1;
+}
+.modal-content{
+    background-color: rgb(81, 87, 94);
+}
+.loginbtn{
+    background-color: rgb(248, 190, 82);
+    font-family: 'Nunito', sans-serif;
+}
+.register-text{
+    color: $color1;
+}
+/* Fin del menú de login */
+
+/* Animación arcoiris para el botón "TOP 10" */
+#rainbow{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    animation: rainbow 10s linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rainbow {
+    0%{
+      color: red;
+    }
+    10%{
+      color: orange;
+    }
+    20%{
+      color: yellow;
+    }
+    30%{
+      color: greenyellow;
+    }
+    40%{
+        color: green;
+    }
+    50%{
+        color: aqua;
+    }
+    60%{
+      color: blue;
+    }
+    70%{
+        color: purple;
+    }
+    80%{
+        color: violet;
+    }
+    90%{
+        color:palevioletred;
+    }
+    100%{
+        color: orangered;
+    }
+}
+/* Fin de animación */
+
 .image{
     width: 80%;
     padding-bottom: 3vh;
@@ -168,9 +243,6 @@ details{
     }
 }
 
-#side2{
-    
-}
 .sideimg{
     float: right;
 }
@@ -181,6 +253,21 @@ details{
     padding: 0;
 }
 
+#TOP{
+    position: fixed;
+    width: 4vw;
+    height: 4vw;
+    background-color:rgb(248, 190, 82);
+    bottom: 40px;
+    right: 30px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 3.9vw;
+    color: black;
+    font-size: 1.5vw;
+    border-radius: 50px;
+    z-index: 99;
+}
 
 /* Inicio del footer */
 footer{
@@ -233,5 +320,19 @@ footer i{
     }
     .footer-logo{
         @extend .contact
+    }
+    #login{
+        display: none;
+    }
+    .card-title{
+        font-size: 2em;
+    }
+}
+@media (min-width: 991px){
+    #login2{
+        display: none;
+    }
+    .noticias-sinopsis{
+        display: none;
     }
 }

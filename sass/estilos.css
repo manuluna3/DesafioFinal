@@ -130,6 +130,124 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
+/* El Menú de login (Cortesía de w3schools.com) */
+#login {
+  background-color: #f8be52;
+  color: #212529 !important;
+  border-radius: 100px;
+  width: 40px;
+}
+
+.close {
+  color: #f8be52;
+}
+
+.close:hover {
+  color: #f8be52;
+}
+
+.modal-body label {
+  font-family: 'Nunito', sans-serif;
+  color: #f8be52;
+}
+
+.modal-content {
+  background-color: #51575e;
+}
+
+.loginbtn {
+  background-color: #f8be52;
+  font-family: 'Nunito', sans-serif;
+}
+
+.register-text {
+  color: #f8be52;
+}
+
+/* Fin del menú de login */
+/* Animación arcoiris para el botón "TOP 10" */
+#rainbow {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  -webkit-animation: rainbow 10s linear;
+          animation: rainbow 10s linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes rainbow {
+  0% {
+    color: red;
+  }
+  10% {
+    color: orange;
+  }
+  20% {
+    color: yellow;
+  }
+  30% {
+    color: greenyellow;
+  }
+  40% {
+    color: green;
+  }
+  50% {
+    color: aqua;
+  }
+  60% {
+    color: blue;
+  }
+  70% {
+    color: purple;
+  }
+  80% {
+    color: violet;
+  }
+  90% {
+    color: palevioletred;
+  }
+  100% {
+    color: orangered;
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    color: red;
+  }
+  10% {
+    color: orange;
+  }
+  20% {
+    color: yellow;
+  }
+  30% {
+    color: greenyellow;
+  }
+  40% {
+    color: green;
+  }
+  50% {
+    color: aqua;
+  }
+  60% {
+    color: blue;
+  }
+  70% {
+    color: purple;
+  }
+  80% {
+    color: violet;
+  }
+  90% {
+    color: palevioletred;
+  }
+  100% {
+    color: orangered;
+  }
+}
+
+/* Fin de animación */
 .image {
   width: 80%;
   padding-bottom: 3vh;
@@ -224,6 +342,22 @@ details details div {
   padding: 0;
 }
 
+#TOP {
+  position: fixed;
+  width: 4vw;
+  height: 4vw;
+  background-color: #f8be52;
+  bottom: 40px;
+  right: 30px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 3.9vw;
+  color: black;
+  font-size: 1.5vw;
+  border-radius: 50px;
+  z-index: 99;
+}
+
 /* Inicio del footer */
 footer {
   position: -webkit-sticky;
@@ -283,6 +417,21 @@ footer i {
 @media (max-width: 991px) {
   .contact, .footer-logo {
     text-align: center;
+  }
+  #login {
+    display: none;
+  }
+  .card-title {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 991px) {
+  #login2 {
+    display: none;
+  }
+  .noticias-sinopsis {
+    display: none;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
