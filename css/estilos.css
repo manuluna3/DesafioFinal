@@ -11,6 +11,8 @@ html{
     scroll-behavior: smooth;
     height: 100%;
 }
+
+/* Ya que usamos el mismo color en casi toda la página, hagamos que al seleccionar también combine */
 p::selection{
     color: black;
     background: rgb(248, 190, 82);
@@ -26,7 +28,14 @@ mark::selection{
 img::selection{
     background: rgb(248, 190, 82);
 }
- 
+div::selection{
+    background-color: rgb(248, 190, 82);
+}
+h3::selection{
+    background-color: rgb(248, 190, 82);
+}
+/* -------------------------------- */
+
 /* Paleta de colores */
 .color1{
    color: rgb(248, 190, 82); 
@@ -79,13 +88,27 @@ body{
 }
 .body2{
     min-height: 100vh;
-    background-color: brown;
+    background-image: url(../assets/svg/endless-constellation.svg);
 }
 .body3{
     min-height: 100vh;
-    /* background-image: linear-gradient(to top, black 20%, red); */
-    background-color: #35383a;
-    height: auto;
+    background-image: linear-gradient(to top, black 20%, red, black);
+    height: 1650px;
+}
+.body4{
+    min-height: 100vh;
+    background-image: linear-gradient(to top, black 20%, blue, black);
+    height: 1650px;
+}
+.body5{
+    min-height: 100vh;
+    background-image: linear-gradient(to top, black 20%, rgb(65, 14, 112), black);
+    height: 1650px;
+}
+.body6{
+    background-image: url(../assets/svg/subtle-prism.svg);
+    background-size: cover;
+    height: 2000px;
 }
 #logo{
     color: rgb(248, 190, 82);
@@ -112,7 +135,7 @@ body{
 #banner p{
     text-shadow: 1px 1px 1px black;
     padding: 1rem;
-    font-size: 2.5vw;
+    font-size: 2rem;
 }
 
 /* El Menú de login (Cortesía de w3schools.com) */
@@ -238,22 +261,17 @@ iframe{
     padding-top: 2vh;
     max-width: 100%;
 }
-/* .contenedor{
-    display: grid;
-    gap: 1rem;
-    grid-auto-rows: 22rem;
-    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-} */
-
-
-.item{
-    border: 2px solid rgb(248, 190, 82);
+.cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 20px;
 }
 .cat-section{
     margin-top: 30px;
     padding-left: 20px;
     color: rgb(248, 190, 82);
-    font-family: 'Nunito', sans-serif;
     text-shadow: 2px 2px 1px black;
 }
 .cat-title{
@@ -261,54 +279,150 @@ iframe{
     text-align: center;
 }
 .cat-bar{
-    margin-left: 10px;
+    margin-left: 20px;
     margin-bottom: 10px;
     align-content: center;
     height: 3px;
-    width: 90%;
+    width: 95%;
     background-color: rgb(248, 190, 82);
     border-radius: 50px;
 }
+.card{
+    background-color: rgb(248, 190, 82);
 
-
-
-
-/* .posterimage {
-    position: relative;
-    width: 100%;
-    height: auto;
-    border: 2px solid rgb(248, 190, 82);
 }
-.cat-img {
+.card i{
+    padding-left: 0.5rem;
+}
+.card i:hover{
+    color: red;
+    cursor: pointer;
+}
+.card img{
+    width: 300px;
+    height: 98%;
+    object-fit: cover;
     display: block;
-    width: 100%;
-
+    position: relative;
 }
-.cat-block{
+  .card-desc{
+    display: block;
+    font-size: 1.2rem;
     position: absolute;
+    height: 50%;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
-    font-family: 'Quicksand', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     opacity: 0;
-    transition: opacity 0.25s;
-}
-.cat-block:hover {
+    padding: 18px 8%;
+    background-image: linear-gradient(to top, black, rgba(255, 253, 253, 0.329));
+    overflow-y: scroll;
+    transition: 0.8s;
+    text-shadow: 1.5px 2px black;
+}  
+.card:hover .card-desc{
     opacity: 1;
+    height: 100%;
 }
-.cat-text {
-    text-align: center;
-    font-size: 1em;
-    font-weight: bold;
-    overflow-x: hidden;
-} */
+
+.top{
+    width: 95%;
+    height: 205px;
+    margin: 50px 0;
+    margin-left: 2.5vw;
+    border: blueviolet 3px solid;
+    border-radius: 20px;
+    background-image: linear-gradient(to top right, black, rgba(255, 255, 255, 0.171));
+    overflow: hidden;
+}
+.top-bar{
+    width: 100%;
+    height: 3px;
+    margin: 10px 0;
+    background-color: blueviolet;
+}
+.top-title{
+    color: white;
+}
+.top-txt{
+    color: white;
+}
+.top-img{
+    height: 11em;
+    width: 8em;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 3px groove white;
+}
+.top-aside{
+    padding: 20px;
+}
+
+.top3{
+    width: 95%;
+    height: 205px;
+    margin: 20px 0;
+    margin-left: 2.5vw;
+    border: #da952e 3px solid;
+    border-radius: 20px;
+    background-image: linear-gradient(to top right, #da952e, #da952e3f);
+    overflow: hidden;
+}
+.top3 h3{
+    text-shadow: 1.5px 1.5px 0px #b6781c;
+}
+.top3-bar{
+    width: 100%;
+    height: 3px;
+    margin: 10px 0;
+    background-color: #b6781c;
+}
+.top2{
+    width: 95%;
+    height: 205px;
+    margin: 20px 0;
+    margin-left: 2.5vw;
+    border: #B4B4B4 3px solid;
+    border-radius: 20px;
+    background-image: linear-gradient(to top right, silver, rgba(192, 192, 192, 0.075));
+    overflow: hidden;
+}
+.top2 h3{
+    text-shadow: 1.5px 1.5px 0px rgb(218, 217, 217);
+}
+.top2-bar{
+    width: 100%;
+    height: 3px;
+    margin: 10px 0;
+    background-color: silver;
+}
+.top1{
+    width: 95%;
+    height: 205px;
+    margin: 20px 0;
+    margin-left: 2.5vw;
+    border: #d6b928 3px solid;
+    border-radius: 20px;
+    background-image: linear-gradient(to top right, rgba(255, 196, 0, 0.705), rgba(255, 217, 0, 0.164));
+    overflow: hidden;
+}
+.top1-img{
+    height: 11em;
+    width: 8em;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 3px groove gold;
+}
+.top1-bar{
+    width: 100%;
+    height: 3px;
+    margin: 10px 0;
+    background-color: rgb(248, 190, 82);
+}
+.top1 h3{
+    text-shadow: 1px 1px 0px rgb(248, 190, 82);
+}
+
+
+
 
 
 /* Botón para ir al inicio de la página */
@@ -317,13 +431,14 @@ iframe{
     width: 2.5em;
     height: 2.5em;
     background-color:rgb(248, 190, 82);
-    bottom: 40px;
-    right: 30px;
+    bottom: 10px;
+    right: 10px;
     text-decoration: none;
     text-align: center;
-    line-height: 3.9vw;
+    line-height: 2.4em;
     color: black;
-    font-size: 1.5vw;
+    font-size: 1em;
+    border: black 1px solid;
     border-radius: 50px;
     z-index: 99;
 }
@@ -378,6 +493,9 @@ footer i{
     #logo{
         padding-top: 20px;
         padding-left: 60px;
+    }
+    .navbar-nav a{
+        padding-left: 10px !important;
     }
 }
 @media (min-width: 991px){
